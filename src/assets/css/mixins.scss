@@ -1,0 +1,124 @@
+// Миксины
+@mixin inlineBlock($vAlign: top) {
+	display: inline-block;
+	vertical-align: $vAlign;
+}
+
+@mixin flex($jContent: flex-start) {
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: $jContent;
+}
+
+@mixin bg($bSize: cover) {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: $bSize;
+}
+
+// Убирает базовые стили со списков
+@mixin reset-list() {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+// Добавляем object-fit для img,
+// font-family нужен для работы полифила.
+@mixin object-fit($property: none, $direction: center) {
+    object-fit: $property;
+    object-position: $direction;
+    font-family: "object-fit: #{$property}; object-position: #{$direction};";
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+}
+
+// rem ---- em
+@function rem($px) {
+	@return $px / 16px +0rem;
+}
+@function em($px) {
+	@return $px / 16px +0em;
+}
+
+//responsive max-width
+@mixin max-width-1920 {
+    @media screen and (max-width: 1920px) {
+        @content;
+    }
+}
+
+@mixin max-width-1440 {
+    @media screen and (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin max-width-1280 {
+    @media screen and (max-width: 1280px) {
+        @content;
+    }
+}
+@mixin max-width-992 {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+@mixin max-width-768 {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin max-width-480 {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+
+//responsive min-width
+
+
+@mixin min-width-1920 {
+    @media screen and (min-width: 1920px) {
+        @content;
+    }
+}
+
+@mixin min-width-1440 {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin min-width-1280 {
+    @media screen and (min-width: 1280px) {
+        @content;
+    }
+}
+@mixin min-width-992 {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+@mixin min-width-768 {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin min-width-480 {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+//responsive ie 11
+@mixin ie11 {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+    }
+}

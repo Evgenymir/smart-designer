@@ -1,0 +1,13 @@
+@import '../../assets/css/mixins';
+@import '../../assets/css/variables';
+
+.success {
+    text-align: center;
+    padding-top: 30px;
+
+    &__text {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,63 @@
+@import '../../assets/css/mixins';
+@import '../../assets/css/variables';
+
+.phone {
+    border: 1px solid $grey;
+    padding: 10px;
+
+    &__img {
+        max-height: 250px;
+        height: 250px;
+        text-align: center;
+        margin-bottom: 10px;
+
+        img {
+            height: 100%;
+        }
+
+        @include max-width-1440 {
+            height: 17vw;
+        }
+
+        @include max-width-992 {
+            height: 25vw;
+        }
+
+        @include max-width-480 {
+            height: 60vw;
+        }
+    }
+
+    &__name {
+        font-size: 18px;
+        line-height: 22px;
+        color: $black;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+
+    &__parameters-item {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 14px;
+        line-height: 18px;
+        border-bottom: 1px solid $grey;
+        padding: 3px 5px;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        span {
+            &:first-child {
+                width: 50%;
+            }
+        }
+    }
+}

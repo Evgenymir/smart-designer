@@ -1,0 +1,42 @@
+@import '../../assets/css/mixins';
+@import '../../assets/css/variables';
+
+.menu {
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__item {
+        @include inlineBlock(middle);
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            border-color: $white;
+        }
+
+        &.is-active {
+            border-color: $white;
+        }
+
+        @include max-width-480 {
+            span {
+                display: none;
+            }
+        }
+    }
+}

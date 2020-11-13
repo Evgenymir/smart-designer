@@ -1,0 +1,12 @@
+@import '../../assets/css/mixins';
+@import '../../assets/css/variables';
+
+.logo {
+    &__link {
+        font-size: 20px;
+        line-height: 20px;
+        color: $white;
+        text-decoration: none;
+    }
+}
+

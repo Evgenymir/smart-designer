@@ -1,0 +1,56 @@
+@import '../../assets/css/mixins';
+@import '../../assets/css/variables';
+
+.phones {
+    background-color: $white;
+    padding: 30px 0;
+
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-left: -1%;
+
+        @include max-width-992 {
+            margin-left: -2%;
+        }
+
+        @include max-width-480 {
+            margin-left: 0;
+        }
+
+        .phone {
+            width: 19%;
+            margin-left: 1%;
+            margin-bottom: 1%;
+
+            @include max-width-1440 {
+                width: 24%;
+            }
+
+            @include max-width-992 {
+                width: 31.3%;
+                margin-left: 2%;
+                margin-bottom: 2%;
+            }
+
+            @include max-width-768 {
+                width: 48%;
+            }
+
+            @include max-width-480 {
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__not-result {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        line-height: 18px;
+        padding: 20px 0;
+    }
+}

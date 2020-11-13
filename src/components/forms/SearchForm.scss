@@ -1,0 +1,10 @@
+@import '../../assets/css/mixins';
+@import '../../assets/css/variables';
+
+.search-form {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto 30px;
+}

@@ -1,0 +1,55 @@
+{
+  "phones": {
+    "byId": {
+      "apple-1": {
+        "id": "apple-1",
+        "name": "Apple",
+        "img": "./img/phone.jpg",
+        "description": "Описание apple 1",
+        "parameters": [
+          {
+            "key": "Камера",
+            "value": "8 мп"
+          }
+        ]
+      },
+      "apple-2": {
+        "id": "apple-2",
+        "name": "Apple 6",
+        "img": "./img/phone.jpg",
+        "description": "Описание apple 2",
+        "parameters": [
+          {
+            "key": "Камера",
+            "value": "8 мп"
+          }
+        ]
+      },
+      "nokia-3": {
+        "id": "nokia-3",
+        "name": "Nokia",
+        "img": "./img/phone.jpg",
+        "description": "Описание nokia 3",
+        "parameters": [
+          {
+            "key": "Камера",
+            "value": "8 мп"
+          }
+        ]
+      },
+      "samsung-4": {
+        "id": "samsung-4",
+        "name": "Samsung 8",
+        "img": "https://cdn.svyaznoy.ru/upload/iblock/a55/12.jpg/resize/870x725/hq/",
+        "description": "Описание samsung 8",
+        "parameters": [
+          {
+            "key": "Камера",
+            "value": "8 мп"
+          }
+        ]
+      }
+    },
+    "allIds": ["apple-1", "apple-2", "nokia-3", "samsung-4"]
+  }
+}
