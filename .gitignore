@@ -1,2 +1,6 @@
 node_modules
 .idea
+webpack.config.prod.js
+webpack.config.js
+gulp/
+gulpfile.js
